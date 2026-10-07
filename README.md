@@ -88,6 +88,10 @@ Luego abrir en el navegador:
 http://localhost:8000
 ```
 
+## 📝 Formularios
+
+Ver [06-formularios](06-formularios/README.md).
+
 ## 🗄️ Base de datos
 
 Los proyectos que utilizan bases de datos pueden trabajar con:
