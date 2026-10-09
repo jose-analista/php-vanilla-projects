@@ -1,0 +1,44 @@
+{
+    "name": "jose-analista/sistema-usuarios",
+    "description": "Sistema de usuarios en PHP: registro, login, roles, CRUD de usuarios, CSRF y logs",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.1",
+        "ext-mbstring": "*",
+        "ext-pdo": "*",
+        "monolog/monolog": "^3.5",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^10.5",
+        "squizlabs/php_codesniffer": "^3.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "start": [
+            "Composer\\Config::disableProcessTimeout",
+            "php -S localhost:8000 -t public"
+        ],
+        "admin": "php bin/crear-admin.php",
+        "test": "phpunit",
+        "stan": "phpstan analyse src --level=5",
+        "cs": "phpcs --standard=PSR12 src"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
