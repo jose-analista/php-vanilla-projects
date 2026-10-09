@@ -1,8 +1,8 @@
 <?php
 
 // Configuración de la base de datos
-$host     = 'localhost';
-$dbname   = 'mi_base_datos';
+$host     = '127.0.0.1';
+$dbname   = 'examplephp';
 $user     = 'root';
 $password = '';
 $charset  = 'utf8mb4';
