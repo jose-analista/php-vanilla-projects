@@ -1,0 +1,48 @@
+# Dependencias de Composer
+/vendor/
+
+# Variables de entorno y credenciales
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+/logs/
+
+# Archivos temporales
+/tmp/
+/temp/
+*.tmp
+*.swp
+*.swo
+*~
+
+# Caché
+/cache/
+/var/cache/
+/.phpunit.cache/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Configuración de editores
+.vscode/
+.idea/
+
+# Pruebas y cobertura
+/coverage/
+/build/coverage/
+
+# Archivos generados por herramientas de desarrollo
+.phpunit.result.cache
+
+# Archivos de respaldo
+*.bak
+*.backup
+*.old
+
+# Archivos locales de configuración
+config.local.php
